@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "146504622189",
+    "project_id": "delivery-23b4c",
+    "storage_bucket": "delivery-23b4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146504622189:android:f6d49f860ea768c292df64",
+        "android_client_info": {
+          "package_name": "com.doneDilivaryApp.delivary_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIAhSiOMEGyi7ZrIKOxgIhFYrvnu3qXHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146504622189:android:5dd5906bc8ddf13992df64",
+        "android_client_info": {
+          "package_name": "com.example.maps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIAhSiOMEGyi7ZrIKOxgIhFYrvnu3qXHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
