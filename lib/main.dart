@@ -6,6 +6,9 @@ import './config/theme_data.dart';
 import './pages/theme_page.dart';
 import './lib/pages/user/user.page.dart';
 import './lib/pages/form/form.page.dart';
+import 'package:get/get.dart';
+import './lib/pages/login/login_page.dart';
+import './lib/pages/login/login_controller.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,12 +20,20 @@ class MyApp extends StatelessWidget {
     final themeProvider = Get.put(ThemeProvider());
 
     return Obx(
-      () => MaterialApp(
+      () => GetMaterialApp(
         title: 'My App',
         theme: themeProvider.themeMode == ThemeMode.dark
             ? themeProvider.darkTheme
             : themeProvider.lightTheme,
-        home: FromPage(),
+        initialRoute: '/login',
+        getPages: [
+          GetPage(
+              name: '/login',
+              page: () => LoginPage(),
+              binding: BindingsBuilder(() {
+                Get.put(LoginController());
+              })),
+        ],
       ),
     );
   }
